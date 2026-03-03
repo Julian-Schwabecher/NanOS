@@ -1,3 +1,4 @@
-main.dSYM/
+/main.dSYM/
 *.out
-.vscode/
+/.vscode/
+/.DS_Store
