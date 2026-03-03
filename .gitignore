@@ -1,6 +1,0 @@
-# Ignore all files
-*
-# Unignore all files with an extension
-!*.*
-# Unignore all directories (so Git can check their contents)
-!*/
