@@ -1,9 +1,58 @@
 #include <stdio.h>
 
+
+void unit_1(){
+
+}
+
+
+void unit_2(){
+
+}
+
+
+void unit_3(){
+
+}
+
+
+void unit_4(){
+
+}
+
+
+void unit_5(){
+
+}
+
+
+void unit_6(){
+
+}
+
+
+void unit_7(){
+    printf("1. RICE box\n");
+    printf("2. K = Product/Reactans not including solids\n");
+    printf("3. Balancing equation\n");
+    printf("4. equilbrium rules\n");
+    printf("5. Le Chatelier's Principle\n");
+
+}
+
+void unit_8(){
+
+}
+
+void unit_9(){
+    
+}
+
 int main(){
      int unit = 0;
     printf("\n\n\n");
     printf("----------------------------------------\n");
+    printf("- Unit 0 Sigfigs\n");
     printf("- Unit 1 Atomic Structure and Properties\n");
     printf("- Unit 2 Compound Structure and Properties\n");
     printf("- Unit 3 Properties of Substances and Mixtures\n");
@@ -19,28 +68,15 @@ int main(){
     scanf("%d", &unit);
     printf("The unit you chose is: Unit %d\n",unit);
 
-    if (unit == 1){
-        unit_1();
-    } else if (unit == 2){
-        unit_2();
-    } else if (unit == 3){
-        unit_3();
-    } else if (unit == 4){
-        unit_4();
-    } else if (unit == 5){
-        unit_5();
-    } else if (unit == 6){
-        unit_6();
-    } else if (unit == 7){
-        unit_7();
-    } else if (unit == 8){
-        unit_8();
-    } else {
-        unit_9();
+    typedef void (*FunctionPointer)(void);
+    FunctionPointer functionList[] = {unit_1,unit_2,unit_3,unit_4,unit_5,unit_6,unit_7,unit_8,unit_9};
+    int units[] = {1,2,3,4,5,6,7,8,9};
+    int length_units = sizeof(units)/ sizeof(units[0]);
+    for(int i = 0; i<length_units; i++){
+        if (units[i] == unit){
+            functionList[i]();
+        }
     }
-
-    
-    return 0;
 
 
     return 0;
