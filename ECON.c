@@ -174,19 +174,15 @@ int main(){
     printf("Which Unit is the question about: ");
     scanf("%d", &unit);
     printf("The unit you chose is: Unit %d\n",unit);
-
-    if (unit == 1){
-        unit_1();
-    } else if (unit == 2){
-        unit_2();
-    } else if (unit == 3){
-        unit_3();
-    } else if (unit == 4){
-        unit_4();
-    } else if (unit ==5){
-        unit_5();
-    } else {
-        unit_6();
+    
+    typedef void (*FunctionPointer)(void);
+    FunctionPointer functionList[6] = {unit_1,unit_2,unit_3,unit_4,unit_5,unit_6};
+    int units[] = {1,2,3,4,5,6};
+    int length_units = sizeof(units)/ sizeof(units[0]);
+    for(int i = 0; i<length_units; i++){
+        if (units[i] == unit){
+            functionList[i]();
+        }
     }
 
     
