@@ -32,12 +32,35 @@ void unit_6(){
 
 
 void unit_7(){
+    int section = 0;
     printf("1. RICE box\n");
     printf("2. K = Product/Reactans not including solids\n");
     printf("3. Balancing equation\n");
     printf("4. equilbrium rules\n");
     printf("5. Le Chatelier's Principle\n");
+    scanf("%d", &section);
 
+    if (section == 1){
+        printf("┏━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓\n");
+        printf("┃ R ┃ Your Reaction goes Here with Coefficents       ┃\n");
+        printf("┣━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\n");
+        printf("┃ I ┃ Intial Molarity                                ┃\n");
+        printf("┣━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\n");
+        printf("┃ C ┃ Change in Molarity                             ┃\n");
+        printf("┣━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\n");
+        printf("┃ E ┃ Equilibrium Molarity or Just I + C             ┃\n");
+        printf("┗━━━┻━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛\n");
+
+    } else if (section == 5){
+        printf("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n");
+        printf("       Concentration                Temp 🌡️               Pressure 💥\n");
+        printf("⬆ Reactant             ⬆ Increased Temp            ⬆ Increased Pressure\n");
+        printf("⬆ Product Formation     Favors Endothermic           Favors side with fewer Moles\n");
+        printf("\n");
+        printf("⬆ Product              ⬇ Decresed Temp           ⬇ Decresed Presure \n");
+        printf("⬆ Reactant Formation     Favors Exothermic          Favors side with more Moles\n");
+        printf("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n");
+    }
 }
 
 void unit_8(){
@@ -46,6 +69,10 @@ void unit_8(){
 
 void unit_9(){
     
+}
+
+void balance(){
+
 }
 
 int main(){
