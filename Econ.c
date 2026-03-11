@@ -176,7 +176,7 @@ int main(){
     printf("The unit you chose is: Unit %d\n",unit);
     
     typedef void (*FunctionPointer)(void);
-    FunctionPointer functionList[6] = {unit_1,unit_2,unit_3,unit_4,unit_5,unit_6};
+    FunctionPointer functionList[] = {unit_1,unit_2,unit_3,unit_4,unit_5,unit_6};
     int units[] = {1,2,3,4,5,6};
     int length_units = sizeof(units)/ sizeof(units[0]);
     for(int i = 0; i<length_units; i++){
